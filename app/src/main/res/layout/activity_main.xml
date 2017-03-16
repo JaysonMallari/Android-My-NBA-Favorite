@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hmmwow.www.mynbafavorites.MainActivity">
+
+    <!-- FIRST VIEWGROUP TITLE LABEL-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp">
+
+            <!-- TOP BACKGROUND -->
+            <ImageView
+                android:id="@+id/back_toplabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/header_nba"
+                android:scaleType="fitCenter"
+                />
+
+            <!-- LEFT LOGO-->
+            <ImageView
+                android:id="@+id/nba_logo"
+                android:layout_width="36dp"
+                android:layout_height="72dp"
+                android:src="@drawable/logo_nba"
+                android:layout_margin="20dp"
+                />
+            
+            <android.support.v7.widget.SearchView
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:background="#f3f2f2"
+                android:layout_toRightOf="@id/nba_logo"
+                android:layout_alignTop="@id/back_toplabel"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                ></android.support.v7.widget.SearchView>
+
+            <!-- SELECT YOUR TEAM LABEL-->
+            <TextView
+                android:id="@+id/select_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Team"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_alignBottom="@id/back_toplabel"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+    <!-- 2nd VIEWGROUP TEAMS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:elevation="10dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            >
+            <!-- TEAM 1-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:elevation="24dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                >
+
+                <!-- LOGO -->
+                <ImageView
+                    android:id="@+id/atlanta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/atlanta"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:drawable/dialog_holo_light_frame"/>
+
+                <!-- TEAM NAME-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atlanta Hawks"
+                    android:layout_below="@id/atlanta"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record(W-L): 37-30"
+                    android:layout_below="@id/atlanta"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <!-- TEAM 2-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:elevation="24dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                >
+
+                <!-- LOGO -->
+                <ImageView
+                    android:id="@+id/boston"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/boston"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    />
+
+                <!-- TEAM NAME-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boston Celtics"
+                    android:layout_below="@id/boston"
+                    android:paddingLeft="10dp"
+                    />
+                <!-- RECORDS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record(W-L): 43-25"
+                    android:layout_below="@id/boston"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+            <!-- TEAM 3-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:elevation="24dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                >
+
+                <!-- LOGO -->
+                <ImageView
+                    android:id="@+id/charlotte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/charlotte"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:drawable/dialog_holo_light_frame"/>
+
+                <!-- TEAM NAME-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Charlotte Hornets"
+                    android:layout_below="@id/charlotte"
+                    android:paddingLeft="10dp"
+                    />
+
+                <!-- RECORDS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record(W-L): 29-39"
+                    android:layout_below="@id/charlotte"
+                    android:paddingLeft="10dp"
+                    android:textSize="13sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- MORE -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_alignParentRight="true"
+
+                />
+
+        </RelativeLayout>
+
+
+        <!-- PLAYER -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#87153A"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:elevation="20dp"
+            >
+
+            <!--SELECT PLAYER -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Player"
+                android:background="#34495e"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                />
+
+            <!-- SELECT LINEAR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- teamlogo -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/cleveland"
+                        android:layout_marginTop="40dp"/>
+
+                <!-- name -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lebron James"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="40dp"
+                        />
+
+                <!-- lebron -->
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/lebron_james"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    <!-- NEXT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:padding="5dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&#169; Renz Jayson Mallari"
+        android:textAlignment="center"
+        android:background="#000"
+        android:textColor="#fff"/>
+</LinearLayout>
